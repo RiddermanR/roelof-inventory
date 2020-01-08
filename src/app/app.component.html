@@ -1,4 +1,6 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div class="inventory-app">
+  <products-list
+    [productList]="products"
+    (onProductSelected)="productWasSelected($event)">
+  </products-list>
+</div>
